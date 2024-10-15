@@ -24,20 +24,19 @@ public class Main {
     }
 
     public static void currentSystem(byte system, short currentYear) {
-        if (system == 1) {
-            if (currentYear <= 2015) {
-                System.out.println("Установите облегченную версию приложения для Android по ссылке");
-            } else {
-                System.out.println("Установите версию приложения для Android по ссылке");
-            }
+        String message;
+        if (system ==1) {
+            message  = "Android";
+        } else {
+            message = "iOS";
         }
-        if (system == 0) {
-            if (currentYear <= 2015) {
-                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-            } else {
-                System.out.println("Установите версию приложения для iOS по ссылке");
-            }
+        if (currentYear <=2015) {
+            message = "Установите облегченную версию приложения для " + message + " по ссылке";
+        } else {
+            message = "Установите версию приложения для " + message + " по ссылке";
         }
+        System.out.println(message);
+
         // in the task, i'm write code for system current version
 
         // 3 task
