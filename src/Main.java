@@ -55,6 +55,7 @@ public class Main {
         } else {
             System.out.println("Потребуется дней: " + 4);
         }
-        // in the task, i'm write code, how much day need for deliveries
+        // in the task, i'm write code, how much day need for deliveries]
+
     }
 }
