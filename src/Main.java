@@ -21,8 +21,13 @@ public class Main {
         short clientYear = 2024;
         currentSystem(client, clientYear);
 
-    }
+        // 3 task
+        byte distanceCar = 95;
+        currentDays(distanceCar);
 
+
+    }
+    // 2 task
     public static void currentSystem(byte system, short currentYear) {
         String message;
         if (system ==1) {
@@ -38,12 +43,8 @@ public class Main {
         System.out.println(message);
 
         // in the task, i'm write code for system current version
-
-        // 3 task
-        byte distanceCar = 95;
-        currentDays(distanceCar);
     }
-
+    // 3 task
     public static void currentDays(byte Distance) {
         if (Distance < 20) {
             System.out.println("Потребуется дней: " + 1);
